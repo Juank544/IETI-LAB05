@@ -15,4 +15,4 @@
 1. Create another repo on your GitHub
 2. Build your favorite magazine / video game cover using only HTML and CSS, remember the Semantic HTML Lesson and CSS Specificity
 
- [TIME Magazine Subscription | Subscribe To Time Magazine Renewal](https://secure.static.meredith.com/crt/store/covers/magazines/nmo/1850_l.jpg)
+ ![TIME Magazine Subscription | Subscribe To Time Magazine Renewal](https://secure.static.meredith.com/crt/store/covers/magazines/nmo/1850_l.jpg)
