@@ -1,4 +1,17 @@
-import * as React from 'react';
+import React, {useState, useEffect} from "react";
+import {useNavigate} from 'react-router-dom';
+
+const Login = () => {
+  const [token, setToken] = useState(null);
+  const navigate = useNavigate();
+  useEffect(() => {
+    fetch("https://ieti-lab-user-endpoint.herokuapp.com/")
+      .then((response) => {
+        setToken(response.token);
+        navigate("/test")
+      })
+  }, [])
+}
 
 const { Component } = React;
 
