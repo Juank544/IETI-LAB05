@@ -7,8 +7,12 @@ const Login = () => {
   useEffect(() => {
     fetch("https://ieti-lab-user-endpoint.herokuapp.com/")
       .then((response) => {
+        // Just an example, it actually should set this token into a localStorage variable or some kind of global state.
+        console.log(response);
+        localStorage.setItem("accessToken", response.token);
         setToken(response.token);
-        navigate("/test")
+        // Once the user have been authenticated the app will navigate to the landing page
+        navigate("/Dashboard")
       })
   }, [])
 }
