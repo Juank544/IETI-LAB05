@@ -1,5 +1,18 @@
 import React, {useState, useEffect} from "react";
+import { Routes, Route } from "react-router";
 import {useNavigate} from 'react-router-dom';
+import Dashboard from "./components/Dashboard";
+
+function App(){
+  return(
+    <div>
+      <Routes>
+        <Route path="/" element={EntryPage}/>
+        <Route path="/Dashboard" element={Dashboard}/>
+      </Routes>
+    </div>
+  );
+}
 
 const Login = () => {
   const [token, setToken] = useState(null);
